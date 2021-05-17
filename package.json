@@ -1,0 +1,19 @@
+{
+  "name": "double-buffer",
+  "version": "1.0.0",
+  "description": "FBO utility for pingpongable buffers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/neiltron/double-buffer/issues"
+  },
+  "homepage": "https://github.com/neiltron/double-buffer#readme",
+  "author": {
+    "name": "Neil Pullman",
+    "email": "neil@descend.org",
+    "url": "https://github.com/neiltron"
+  },
+  "license": "ISC"
+}
