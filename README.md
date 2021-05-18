@@ -4,9 +4,17 @@ Simple utility for bootstrapping a ping-pongable framebuffer.
 
 ## Usage
 
+Install via npm:
+
+```
+npm install -s git@github.com:neiltron/double-buffer.git
+```
+
 ### Create FBO
 
 ```js
+import DoubleBuffer from 'double-buffer';
+
 fbo = new DoubleBuffer({ width: canvasSize, height: canvasSize });
 ```
 
@@ -20,9 +28,11 @@ plane = new THREE.Mesh(
     vertexShader,
     fragmentShader,
     uniforms: {
+      // set read texture as input on simulation mesh
       bufferTexture: { value: fbo.read().texture, type: 't' },
     }
   })
+);
 ```
 
 ### Setup plane for display
@@ -31,6 +41,7 @@ plane = new THREE.Mesh(
 scenePlane = new THREE.Mesh(
   new THREE.PlaneBufferGeometry(canvasSize, canvasSize),
   new THREE.MeshBasicMaterial({
+    // set read texture as input on display mesh
     map: fbo.read().texture
   })
 );
