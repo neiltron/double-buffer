@@ -15,5 +15,6 @@
     "email": "neil@descend.org",
     "url": "https://github.com/neiltron"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "private": true
 }
