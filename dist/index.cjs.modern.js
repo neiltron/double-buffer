@@ -1,0 +1,2 @@
+export default class{constructor(e={}){const r=e.width||window.innerWidth,t=e.height||window.innerHeight,i=THREE.LinearFilter,u=THREE.LinearFilter;this.bufferTexture=new THREE.WebGLRenderTarget(r,t,{minFilter:i,magFilter:u}),this.bufferTexture2=new THREE.WebGLRenderTarget(r,t,{minFilter:i,magFilter:u})}read(){return this.bufferTexture}write(){return this.bufferTexture2}swap(){const e=this.bufferTexture;this.bufferTexture=this.bufferTexture2,this.bufferTexture2=e}}
+//# sourceMappingURL=index.cjs.modern.js.map
