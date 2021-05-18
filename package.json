@@ -2,7 +2,7 @@
   "name": "double-buffer",
   "version": "1.0.0",
   "description": "FBO utility for pingpongable buffers",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "esbuild src/index.js --bundle --outfile=./dist/index.js"
   },
