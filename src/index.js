@@ -1,12 +1,14 @@
+import { LinearFilter, WebGLRenderTarget } from 'three';
+
 export default class DoubleBuffer {
   constructor(opts = {}) {
     const w = opts.width || window.innerWidth;
     const h = opts.height || window.innerHeight;
-    const minFilter = THREE.LinearFilter;
-    const magFilter = THREE.LinearFilter;
+    const minFilter = LinearFilter;
+    const magFilter = LinearFilter;
 
-    this.bufferTexture = new THREE.WebGLRenderTarget( w, h, { minFilter, magFilter });
-    this.bufferTexture2 = new THREE.WebGLRenderTarget( w, h, { minFilter, magFilter })
+    this.bufferTexture = new WebGLRenderTarget( w, h, { minFilter, magFilter });
+    this.bufferTexture2 = new WebGLRenderTarget( w, h, { minFilter, magFilter })
   }
 
   read() {

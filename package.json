@@ -1,6 +1,6 @@
 {
   "name": "double-buffer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FBO utility for pingpongable buffers",
   "source": "./src/index.js",
   "exports": "./dist/index.modern.js",
@@ -21,7 +21,7 @@
     "url": "https://github.com/neiltron"
   },
   "license": "ISC",
-  "private": true,
+  "private": false,
   "dependencies": {},
   "devDependencies": {
     "microbundle": "^0.13.0"

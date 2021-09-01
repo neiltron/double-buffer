@@ -38,7 +38,7 @@ plane = new THREE.Mesh(
 ### Setup plane for display
 
 ```js
-scenePlane = new THREE.Mesh(
+displayPlane = new THREE.Mesh(
   new THREE.PlaneBufferGeometry(canvasSize, canvasSize),
   new THREE.MeshBasicMaterial({
     // set read texture as input on display mesh
